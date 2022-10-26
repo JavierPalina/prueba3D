@@ -22,7 +22,7 @@ export default function Model(props) {
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <group rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={200}>
             <mesh geometry={nodes.TAPE_LP__0.geometry} material={materials['Scene_-_Root']} material-color={"white"}>
-            <Decal position={[3.0, 0.75, 0.6]} rotation={-0.7} scale={0.25} map={discover} map-anisotropy={16} />
+              <Decal position={[3.0, 0.75, 0.6]} rotation={-0.7} scale={0.25} map={discover} map-anisotropy={16} />
             </mesh>
           </group>
         </group>
