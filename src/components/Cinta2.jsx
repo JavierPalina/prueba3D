@@ -16,10 +16,10 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/cinta2.gltf')
   const discover = useTexture("../src/assets/discover.png")
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} args={[3,3,3]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <group position={[0, 86.93, 0]} scale={146.06}>
+          <group position={[0, 86.93, 0]} scale={100}>
             <mesh geometry={nodes.pPipe1_logo_0.geometry} material={materials.logo} />
             <mesh geometry={nodes.pPipe1_InnerTape_0.geometry} material={materials.InnerTape} material-color={props.color}/>
             <mesh geometry={nodes.pPipe1_OuterTape_0.geometry} material={materials.OuterTape} material-color={props.color}>

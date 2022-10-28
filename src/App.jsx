@@ -9,11 +9,11 @@ function App() {
 const [color, setColor] = useState('white');
   return (
     <div className="App">
-      <Canvas className='canvas'>
+      <Canvas className='canvas' camera={{ position: [1, 1, 850], fov: 25}}>
         <OrbitControls enableZoom={true} enablePan={false} wireframe/>
         <ambientLight intensity={0.5}/>
         <directionalLight position={[10, 10, 5]} intensity={1.5}/>
-          <Cinta2 height="600px" width="1200px" color={color}/>
+          <Cinta2 color={color}/>
       </Canvas>
       <div>
         <input type="color" value={color} onChange={(e) => setColor(e.target.value)} />
